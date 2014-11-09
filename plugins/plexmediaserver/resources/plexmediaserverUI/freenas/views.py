@@ -20,13 +20,7 @@ import xml.etree.ElementTree as ET
 
 from plexmediaserverUI.freenas import forms, models, utils
 
-arch = platform.machine()
-
-PLEXMEDIASERVER_PBI_PATH = "/usr/pbi/plexmediaserver-%s" % arch
-PLEXMEDIASERVER_PATH = os.path.join(
-    PLEXMEDIASERVER_PBI_PATH,
-    "plexdata/Plex Media Server"
-)
+PLEXMEDIASERVER_PATH = "/var/db/plexdata/Plex Media Server"
 PLEXMEDIASERVER_PREFERENCES_XML = os.path.join(
     PLEXMEDIASERVER_PATH,
     "Preferences.xml"

@@ -5,9 +5,7 @@ import platform
 
 plexmediaserver_pbi_path = "/usr/pbi/plexmediaserver-" + platform.machine()
 plexmediaserver_etc_path = os.path.join(plexmediaserver_pbi_path, "etc")
-plexmediaserver_mnt_path = os.path.join(plexmediaserver_pbi_path, "mnt")
 plexmediaserver_fcgi_pidfile = "/var/run/plexmediaserver_fcgi_server.pid"
-plexmediaserver_fcgi_wwwdir = os.path.join(plexmediaserver_pbi_path, "www")
 plexmediaserver_control = "/usr/local/etc/rc.d/plexmediaserver"
 plexmediaserver_icon = os.path.join(plexmediaserver_pbi_path, "default.png")
 plexmediaserver_oauth_file = os.path.join(plexmediaserver_pbi_path, ".oauth")
