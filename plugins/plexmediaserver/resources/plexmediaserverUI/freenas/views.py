@@ -1,6 +1,5 @@
 import os
 import json
-import platform
 import tempfile
 import time
 import urllib2
