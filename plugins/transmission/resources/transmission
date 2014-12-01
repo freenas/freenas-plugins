@@ -42,11 +42,11 @@ transmission_stop()
 	echo -n 'Stopping transmission.'
 	if [ -f "${pidfile}" ]
 	then
-		kill -KILL $(cat "${pidfile}")
+		kill -TERM $(cat "${pidfile}")
 		rm -f ${pidfile}
 		res=$?
 	else
-		killall -KILL transmission-daemon
+		killall -TERM transmission-daemon
 		res=$?
 	fi
 
